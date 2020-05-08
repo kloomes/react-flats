@@ -5,8 +5,17 @@ import Card from './card';
 const FlatList = ({ flats }) => {
   return (
     <div className="flat-list">
-      {flats.map(flat => <Card name={flat.name} key={flat.name} imageUrl={flat.imageUrl} />)}
-      )
+      {flats.map(
+        flat => (
+          <Card
+            name={flat.name}
+            key={flat.name}
+            imageUrl={flat.imageUrl}
+            price={flat.price}
+            priceCurrency={flat.priceCurrency}
+          />
+        )
+      )}
     </div>
   );
 };
