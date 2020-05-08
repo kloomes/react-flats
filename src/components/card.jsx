@@ -13,6 +13,7 @@ class Card extends Component {
             {this.props.name}
           </h2>
         </div>
+        <a className="card-link" href="#"></a>
       </div>
     );
   }
