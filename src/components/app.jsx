@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+
 import SimpleMap from './mapbox';
 import FlatList from './flat_list';
 import flats from '../data/flats';
+
+require('dotenv').config();
+
 
 class App extends Component {
   render() {
