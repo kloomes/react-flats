@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GoogleMapReact from './google_map_react';
 
 class App extends Component {
   render() {
@@ -8,10 +9,10 @@ class App extends Component {
           Flat List
         </div>
         <div className="map-container">
-          Map
+          <GoogleMapReact />
         </div>
       </div>
-    )
+    );
   }
 }
 
