@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Card from './card';
+// import flats from '../data/flats';
 
-class FlatList extends Component {
-  render() {
-    return (
-      <div>
-       Flat List 2
-      </div>
-    );
-  }
-}
+const FlatList = ({ flats }) => {
+  return (
+    <div className="flat-list">
+      {flats.map(flat => <Card name={flat.name} key={flat.name} />)}
+      )
+    </div>
+  );
+};
 
 export default FlatList;
